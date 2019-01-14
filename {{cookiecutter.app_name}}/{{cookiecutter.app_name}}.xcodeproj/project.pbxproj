@@ -457,11 +457,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B33AE51F21ECAA2F0016966A /* Build configuration list for PBXNativeTarget "{{cookiecutter.app_name}}" */;
 			buildPhases = (
+				B33AE52221ECACC70016966A /* ShellScript */,
+				4D0D3E5088DBEC9EEFB4DD75 /* [CP] Check Pods Manifest.lock */,
 				B33AE50921ECAA2E0016966A /* Sources */,
 				B33AE50A21ECAA2E0016966A /* Frameworks */,
 				B33AE50B21ECAA2E0016966A /* Resources */,
-				B33AE52221ECACC70016966A /* ShellScript */,
 				B33AE52321ECACE50016966A /* ShellScript */,
+				F23430304B5665F4E5B9EA7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -520,6 +522,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4D0D3E5088DBEC9EEFB4DD75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-{{cookiecutter.app_name}}-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B33AE52221ECACC70016966A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,14 +552,16 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$SRCROOT/{{cookiecutter.app_name}}/Other/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/{{cookiecutter.app_name}}/Other\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/{{cookiecutter.app_name}}/Other/R.generated.swift\"\n";
 		};
 		B33AE52321ECACE50016966A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;

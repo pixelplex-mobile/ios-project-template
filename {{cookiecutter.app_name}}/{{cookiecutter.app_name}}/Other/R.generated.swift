@@ -16,58 +16,6 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.color` struct is generated, and contains static references to 0 colors.
-  struct color {
-    fileprivate init() {}
-  }
-  
-  /// This `R.file` struct is generated, and contains static references to 1 files.
-  struct file {
-    /// Resource file `Default-568h@2x.png`.
-    static let default568h2xPng = Rswift.FileResource(bundle: R.hostingBundle, name: "Default-568h@2x", pathExtension: "png")
-    
-    /// `bundle.url(forResource: "Default-568h@2x", withExtension: "png")`
-    static func default568h2xPng(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.default568h2xPng
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
-    fileprivate init() {}
-  }
-  
-  /// This `R.font` struct is generated, and contains static references to 0 fonts.
-  struct font {
-    fileprivate init() {}
-  }
-  
-  /// This `R.image` struct is generated, and contains static references to 1 images.
-  struct image {
-    /// Image `Default-568h`.
-    static let default568h = Rswift.ImageResource(bundle: R.hostingBundle, name: "Default-568h")
-    
-    /// `UIImage(named: "Default-568h", bundle: ..., traitCollection: ...)`
-    static func default568h(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.default568h, compatibleWith: traitCollection)
-    }
-    
-    fileprivate init() {}
-  }
-  
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
-  struct nib {
-    fileprivate init() {}
-  }
-  
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
-  struct reuseIdentifier {
-    fileprivate init() {}
-  }
-  
-  /// This `R.segue` struct is generated, and contains static references to 0 view controllers.
-  struct segue {
-    fileprivate init() {}
-  }
-  
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
@@ -83,16 +31,6 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Root", bundle: ...)`
     static func root(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.root)
-    }
-    
-    fileprivate init() {}
-  }
-  
-  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
-  struct string {
-    /// This `R.string.localization` struct is generated, and contains static references to 0 localization keys.
-    struct localization {
-      fileprivate init() {}
     }
     
     fileprivate init() {}
@@ -116,20 +54,22 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
   }
   
-  struct nib {
-    fileprivate init() {}
-  }
-  
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
+      try launchScreen.validate()
       try root.validate()
     }
     
-    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType {
+    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = UIKit.UIViewController
       
       let bundle = R.hostingBundle
       let name = "LaunchScreen"
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+      }
       
       fileprivate init() {}
     }
@@ -146,6 +86,8 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
         if _R.storyboard.root().rootViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'rootViewController' could not be loaded from storyboard 'Root' as 'RootViewController'.") }
       }
       

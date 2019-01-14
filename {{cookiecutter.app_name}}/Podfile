@@ -6,7 +6,7 @@ def swinject_pods
 end
 
 def helpers_pods
-    pod 'R.swift'
+    pod 'R.swift', '5.0.0'
     pod 'Moya'
     pod 'SwiftyJSON'
 end
