@@ -12,7 +12,6 @@
 		B33AE56B21ECAD210016966A /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = B33AE52C21ECAD210016966A /* Localization.strings */; };
 		B33AE56C21ECAD210016966A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33AE52E21ECAD210016966A /* Assets.xcassets */; };
 		B33AE56D21ECAD210016966A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53021ECAD210016966A /* R.generated.swift */; };
-		B33AE56E21ECAD210016966A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B33AE53121ECAD210016966A /* Info.plist */; };
 		B33AE56F21ECAD210016966A /* NetworkProviderImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53B21ECAD210016966A /* NetworkProviderImp.swift */; };
 		B33AE57021ECAD210016966A /* SharedSorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53D21ECAD210016966A /* SharedSorage.swift */; };
 		B33AE57121ECAD210016966A /* KeyValueSorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53F21ECAD210016966A /* KeyValueSorage.swift */; };
@@ -515,7 +514,6 @@
 				B33AE56C21ECAD210016966A /* Assets.xcassets in Resources */,
 				B33AE57C21ECAD210016966A /* LaunchScreen.storyboard in Resources */,
 				B33AE56B21ECAD210016966A /* Localization.strings in Resources */,
-				B33AE56E21ECAD210016966A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,7 +723,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7Q43CUMWT;
-				INFOPLIST_FILE = "{{cookiecutter.app_name}}/Info.plist";
+				INFOPLIST_FILE = "{{cookiecutter.app_name}}/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -743,7 +741,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7Q43CUMWT;
-				INFOPLIST_FILE = "{{cookiecutter.app_name}}/Info.plist";
+				INFOPLIST_FILE = "{{cookiecutter.app_name}}/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
