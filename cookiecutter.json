@@ -1,4 +1,6 @@
 {
     "app_name": "AwesomeApp",
-    "company_name": "AwesomeCompany"
+    "company_name": "AwesomeCompany",
+    "lead_dev": "Your Name",
+    "lead_email": "Your email"
 }

@@ -2,8 +2,8 @@
 //  RootRootPresenter.swift
 //  {{cookiecutter.app_name}}
 //
-//  Created by Fedorenko Nikita on 19/03/2018.
-//  Copyright © 2018 PixelPlex. All rights reserved.
+//  Created by {{cookiecutter.lead_dev}} on 17.05.2018.
+//  Copyright © 2018 {{cookiecutter.lead_email}}. All rights reserved.
 //
 
 import UIKit
