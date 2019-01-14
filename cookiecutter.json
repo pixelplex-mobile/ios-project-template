@@ -1,7 +1,5 @@
 {
     "project_name": "Project Name",
     "company_name": "PixelPlex",
-    "bundle_identifier": "com.{{ cookiecutter.company_name | replace(' ', '-') | lower }}.{{ cookiecutter.project_name | replace(' ', '-') | lower }}",
     "lead_dev": "Your Name",
-    "lead_email": "{{ cookiecutter.lead_dev | replace(' ', '.') | lower }}@pixelplex.io",
 }
