@@ -134,16 +134,8 @@
 		B33AE52921ECAD210016966A /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE52A21ECAD210016966A /* ThematicBase */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		B33AE52A21ECAD210016966A /* ThematicBase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThematicBase;
 			sourceTree = "<group>";
 		};
 		B33AE52B21ECAD210016966A /* Other */ = {
