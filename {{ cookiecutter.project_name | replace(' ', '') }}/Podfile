@@ -1,0 +1,19 @@
+platform :ios, '9.0'
+use_frameworks!
+
+def swinject_pods
+    pod 'Swinject'
+end
+
+def helpers_pods
+    pod 'R.swift'
+    pod 'Moya'
+    pod 'SwiftyJSON'
+end
+
+target '{{ cookiecutter.project_name | replace(' ', '') }}' do
+        
+    swinject_pods
+    helpers_pods
+    
+end
