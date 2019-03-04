@@ -38,7 +38,6 @@ extension Presentable where Self: UIViewController {
     }
 
     func setRoot(fromViewController viewController: UIViewController) {
-        
         viewController.navigationController?.setViewControllers([self], animated: true)
     }
     

@@ -16,10 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         _ = ApplicationAssembler.rootAssembler()
-        self.window = applicationAssembler.assembler.resolver.resolve(UIWindow.self)!
+        self.window = applicationAssembler.assembler.resolver.resolve(UIWindow.self)
         self.window?.makeKeyAndVisible()
-        
+        // swiftlint:disable force_unwrapping
         let configurators: [ConfiguratorProtocol] = applicationAssembler.assembler.resolver.resolve([ConfiguratorProtocol].self)!
+        // swiftlint:enable force_unwrapping
         for configurator in configurators {
             configurator.configure()
         }
@@ -36,14 +37,19 @@ extension AppDelegate {
     }
     
     static var currentWindow: UIWindow {
+        // swiftlint:disable force_unwrapping
         return currentDelegate.window!
+        // swiftlint:enable force_unwrapping
     }
     
     static var moduleAssembly: ModuleAssembly {
+        // swiftlint:disable force_unwrapping
         return applicationAssembler.assembler.resolver.resolve(ModuleAssembly.self)!
+        // swiftlint:enable force_unwrapping
     }
     
     static var applicationAssembler: ApplicationAssembler {
         return currentDelegate.applicationAssembler
     }
 }
+

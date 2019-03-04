@@ -12,9 +12,8 @@
 		B33AE56B21ECAD210016966A /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = B33AE52C21ECAD210016966A /* Localization.strings */; };
 		B33AE56C21ECAD210016966A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B33AE52E21ECAD210016966A /* Assets.xcassets */; };
 		B33AE56D21ECAD210016966A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53021ECAD210016966A /* R.generated.swift */; };
-		B33AE56F21ECAD210016966A /* NetworkProviderImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53B21ECAD210016966A /* NetworkProviderImp.swift */; };
 		B33AE57021ECAD210016966A /* SharedSorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53D21ECAD210016966A /* SharedSorage.swift */; };
-		B33AE57121ECAD210016966A /* KeyValueSorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53F21ECAD210016966A /* KeyValueSorage.swift */; };
+		B33AE57121ECAD210016966A /* KeyValueStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE53F21ECAD210016966A /* KeyValueStoring.swift */; };
 		B33AE57221ECAD210016966A /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54121ECAD210016966A /* ServicesAssembly.swift */; };
 		B33AE57321ECAD210016966A /* CoreComponentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54221ECAD210016966A /* CoreComponentAssembly.swift */; };
 		B33AE57421ECAD210016966A /* ProxyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AE54321ECAD210016966A /* ProxyAssembly.swift */; };
@@ -44,9 +43,8 @@
 		B33AE52E21ECAD210016966A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B33AE53021ECAD210016966A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B33AE53121ECAD210016966A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B33AE53B21ECAD210016966A /* NetworkProviderImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderImp.swift; sourceTree = "<group>"; };
 		B33AE53D21ECAD210016966A /* SharedSorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedSorage.swift; sourceTree = "<group>"; };
-		B33AE53F21ECAD210016966A /* KeyValueSorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueSorage.swift; sourceTree = "<group>"; };
+		B33AE53F21ECAD210016966A /* KeyValueStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStoring.swift; sourceTree = "<group>"; };
 		B33AE54121ECAD210016966A /* ServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
 		B33AE54221ECAD210016966A /* CoreComponentAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreComponentAssembly.swift; sourceTree = "<group>"; };
 		B33AE54321ECAD210016966A /* ProxyAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyAssembly.swift; sourceTree = "<group>"; };
@@ -240,7 +238,6 @@
 		B33AE53A21ECAD210016966A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE53B21ECAD210016966A /* NetworkProviderImp.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -256,7 +253,7 @@
 		B33AE53E21ECAD210016966A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				B33AE53F21ECAD210016966A /* KeyValueSorage.swift */,
+				B33AE53F21ECAD210016966A /* KeyValueStoring.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -455,7 +452,6 @@
 				B33AE50A21ECAA2E0016966A /* Frameworks */,
 				B33AE50B21ECAA2E0016966A /* Resources */,
 				B33AE52321ECACE50016966A /* ShellScript */,
-				F23430304B5665F4E5B9EA7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -590,9 +586,8 @@
 				B33AE57B21ECAD210016966A /* ModuleAssembly.swift in Sources */,
 				B33AE57321ECAD210016966A /* CoreComponentAssembly.swift in Sources */,
 				B33AE58121ECAD210016966A /* RootConfigurator.swift in Sources */,
-				B33AE57121ECAD210016966A /* KeyValueSorage.swift in Sources */,
+				B33AE57121ECAD210016966A /* KeyValueStoring.swift in Sources */,
 				B33AE58221ECAD210016966A /* RootProtocols.swift in Sources */,
-				B33AE56F21ECAD210016966A /* NetworkProviderImp.swift in Sources */,
 				B33AE56D21ECAD210016966A /* R.generated.swift in Sources */,
 				B33AE57621ECAD210016966A /* ConfiguratorProtocol.swift in Sources */,
 				B33AE57021ECAD210016966A /* SharedSorage.swift in Sources */,

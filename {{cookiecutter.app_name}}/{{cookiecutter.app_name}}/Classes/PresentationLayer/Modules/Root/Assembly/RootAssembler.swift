@@ -14,7 +14,7 @@ class RootModuleAssembler: Assembly {
         container.register(RootInteractor.self) { ( _, presenter: RootPresenter) in
             let interactor = RootInteractor()
             interactor.output = presenter
-
+            
             return interactor
         }
         
@@ -27,9 +27,9 @@ class RootModuleAssembler: Assembly {
         
         container.register(RootModuleInput.self) { resolver in
             let presenter = RootPresenter()
-
-            let viewController = resolver.resolve(RootViewController.self, argument: presenter)!
-
+            
+            let viewController = resolver.resolve(RootViewController.self, argument: presenter)
+            
             presenter.view = viewController
             presenter.interactor = resolver.resolve(RootInteractor.self, argument: presenter)
             presenter.router = resolver.resolve(RootRouter.self, argument: viewController)
@@ -38,9 +38,11 @@ class RootModuleAssembler: Assembly {
         }
         
         container.register(RootViewController.self) { (_, presenter: RootPresenter) in
+            // swiftlint:disable force_unwrapping
             let viewController = R.storyboard.root.rootViewController()!
             viewController.output = presenter
             return viewController
+            // swiftlint:enable force_unwrapping
         }
     }
 }

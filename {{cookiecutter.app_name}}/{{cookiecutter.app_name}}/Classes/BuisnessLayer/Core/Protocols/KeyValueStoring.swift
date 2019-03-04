@@ -1,5 +1,5 @@
 //
-//  KeyValueSorage.swift
+//  KeyValueStoring.swift
 //  {{cookiecutter.app_name}}
 //
 //  Created by {{cookiecutter.lead_dev}} on 17.05.2018.

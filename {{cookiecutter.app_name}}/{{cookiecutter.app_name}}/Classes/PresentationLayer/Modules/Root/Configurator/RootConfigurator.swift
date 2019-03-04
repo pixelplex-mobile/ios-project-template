@@ -11,7 +11,9 @@ import UIKit
 
 class RootModuleConfigurator {
     func configureModule () -> RootModuleInput {
+        // swiftlint:disable force_unwrapping
         let moduleInput = AppDelegate.moduleAssembly.resolver.resolve(RootModuleInput.self)!
         return moduleInput
+        // swiftlint:enable force_unwrapping
     }
 }
