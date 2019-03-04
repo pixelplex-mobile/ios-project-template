@@ -6,16 +6,12 @@
 //  Copyright © 2018 {{cookiecutter.company_name}}. All rights reserved.
 //
 
-import UIKit
 import Swinject
+import UIKit
 
 class RootModuleConfigurator {
-
     func configureModule () -> RootModuleInput {
-
         let moduleInput = AppDelegate.moduleAssembly.resolver.resolve(RootModuleInput.self)!
-        
         return moduleInput
     }
-
 }

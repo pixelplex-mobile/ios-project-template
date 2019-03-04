@@ -9,7 +9,6 @@
 import UIKit
 
 class RootRouter: RootRouterInput {
-    
 	weak var view: UIViewController?
     weak var splash: UIViewController?
     weak var verification: UIViewController?
@@ -19,5 +18,4 @@ class RootRouter: RootRouterInput {
 }
 
 extension RootRouter {
-    
 }

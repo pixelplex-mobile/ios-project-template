@@ -10,7 +10,6 @@ import Foundation
 import Swinject
 
 class ApplicationAssembler {
-    
     private (set) var assembler: Assembler!
     static func rootAssembler() -> ApplicationAssembler {
         let assembler = Assembler([RootAssembly()])
@@ -23,7 +22,6 @@ class ApplicationAssembler {
 
 class RootAssembly: Assembly {
     func assemble(container: Container) {
-        
         container.register(UIWindow.self) { _ in UIWindow(frame: UIScreen.main.bounds) }
             .inObjectScope(.container)
         
@@ -39,8 +37,10 @@ class RootAssembly: Assembly {
         }.inObjectScope(.container)
         
         container.register([ConfiguratorProtocol].self) {resolver in
-            [resolver.resolve(ConfiguratorProtocol.self, name: "Appearance")!,
-            resolver.resolve(ConfiguratorProtocol.self, name: "Application")!]
+            [
+                resolver.resolve(ConfiguratorProtocol.self, name: "Appearance")!,
+                resolver.resolve(ConfiguratorProtocol.self, name: "Application")!
+            ]
         }
         
         container.register(ConfiguratorProtocol.self, name: "Appearance") { _ in

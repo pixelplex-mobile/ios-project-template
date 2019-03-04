@@ -9,8 +9,6 @@
 import Swinject
 
 final class ProxyAssembly: Assembly {
-    
     func assemble(container: Container) {
-        
     }
 }

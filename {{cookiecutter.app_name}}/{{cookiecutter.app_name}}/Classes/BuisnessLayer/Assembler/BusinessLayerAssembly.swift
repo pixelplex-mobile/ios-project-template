@@ -6,11 +6,10 @@
 //  Copyright © 2018 {{cookiecutter.company_name}}. All rights reserved.
 //
 
-import Swinject
 import Moya
+import Swinject
 
 class BusinessLayerAssembly {
-    
     init(parent: Assembler) {
         let assemblies: [Assembly] = [ServicesAssembly(), CoreComponentAssembly(), ProxyAssembly()]
         parent.apply(assemblies: assemblies)

@@ -9,7 +9,6 @@
 import Foundation
 
 protocol KeyValueStoring {
-    
     func getData(key: String) -> Data?
     func set(key: String, value: Data)
     func get(key: String) -> String?

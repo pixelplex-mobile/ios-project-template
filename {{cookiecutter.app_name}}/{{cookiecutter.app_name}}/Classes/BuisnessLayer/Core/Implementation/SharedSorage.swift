@@ -9,7 +9,6 @@
 import Foundation
 
 final class SharedSorage: KeyValueStoring {
-    
     // MARK: - KeyValueStoring
     func getData(key: String) -> Data? {
         return UserDefaults.standard.value(forKey: key) as? Data

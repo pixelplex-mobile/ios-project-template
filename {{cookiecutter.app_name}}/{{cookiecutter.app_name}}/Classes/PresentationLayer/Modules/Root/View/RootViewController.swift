@@ -9,13 +9,11 @@
 import UIKit
 
 class RootViewController: UIViewController {
-
     var output: RootViewOutput!
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         output.viewIsReady()
     }
 }
@@ -23,9 +21,6 @@ class RootViewController: UIViewController {
 // MARK: - RootViewInput
 
 extension RootViewController: RootViewInput {
-  
 	func setupInitialState() {
-    
   	}
-  
 }

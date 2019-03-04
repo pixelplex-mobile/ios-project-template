@@ -9,8 +9,8 @@
 import Swinject
 
 class ModuleAssembly {
-    
     fileprivate let assembler: Assembler!
+    
     public var resolver: Resolver {
         return assembler.resolver
     }

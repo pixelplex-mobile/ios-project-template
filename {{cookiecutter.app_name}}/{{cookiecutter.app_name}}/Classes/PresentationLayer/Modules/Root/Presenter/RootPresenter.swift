@@ -15,7 +15,6 @@ enum AuthState {
 }
 
 class RootPresenter {
-
     weak var view: RootViewInput!
     weak var output: RootModuleOutput?
     
@@ -26,7 +25,6 @@ class RootPresenter {
 // MARK: - RootModuleInput
 
 extension RootPresenter: RootModuleInput {
-
   	var viewController: UIViewController {
     	return view.viewController
   	}
@@ -35,14 +33,11 @@ extension RootPresenter: RootModuleInput {
 // MARK: - RootViewOutput
 
 extension RootPresenter: RootViewOutput {
-    
     func viewIsReady() {
-    
-    }    
+    }
 }
 
 // MARK: - RootInteractorOutput
 
 extension RootPresenter: RootInteractorOutput {
-    
 }

@@ -9,9 +9,7 @@
 import UIKit
 
 class ApplicationConfigurator: ConfiguratorProtocol {
-  
     func configure() {
-
         var rootView: UIViewController!
 
         let viewController = RootModuleConfigurator().configureModule().viewController

@@ -7,12 +7,10 @@
 //
 
 class RootInteractor {
-
     weak var output: RootInteractorOutput!
 }
 
 // MARK: - RootInteractorInput
 
 extension RootInteractor: RootInteractorInput {
-    
 }

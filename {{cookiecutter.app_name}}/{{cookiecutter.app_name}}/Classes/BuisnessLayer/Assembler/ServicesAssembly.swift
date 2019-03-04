@@ -9,7 +9,6 @@
 import Swinject
 
 final class ServicesAssembly: Assembly {
-
     func assemble(container: Container) {      
     }
 }

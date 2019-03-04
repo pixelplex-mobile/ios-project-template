@@ -9,9 +9,8 @@
 import UIKit
 
 protocol Presentable {
-  
     var viewController: UIViewController { get }
-  
+    
     func present()
     func present(fromViewController viewController: UIViewController)
     func setRoot(fromViewController viewController: UIViewController)
@@ -26,7 +25,6 @@ protocol Presentable {
 }
 
 extension Presentable where Self: UIViewController {
-  
     var viewController: UIViewController {
         return self
     }
@@ -69,7 +67,6 @@ extension Presentable where Self: UIViewController {
     }
   
     func showModalAnimated(modal: UIViewController) {
-        
         let transition: CATransition = CATransition()
         transition.duration = 0.1
         transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
@@ -84,7 +81,6 @@ extension Presentable where Self: UIViewController {
     }
     
     func hideModalAnimated(modal: UIViewController) {
-        
         let transition: CATransition = CATransition()
         transition.duration = 0.1
         transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)

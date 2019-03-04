@@ -10,13 +10,11 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
     var window: UIWindow?
     
     var applicationAssembler = ApplicationAssembler()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         _ = ApplicationAssembler.rootAssembler()
         self.window = applicationAssembler.assembler.resolver.resolve(UIWindow.self)!
         self.window?.makeKeyAndVisible()
@@ -31,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    
     static var currentDelegate: AppDelegate {
         // swiftlint:disable force_cast
         return UIApplication.shared.delegate as! AppDelegate

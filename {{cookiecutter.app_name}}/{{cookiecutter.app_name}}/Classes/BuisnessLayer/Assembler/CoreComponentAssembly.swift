@@ -9,7 +9,6 @@
 import Swinject
 
 final class CoreComponentAssembly: Assembly {
-        
     func assemble(container: Container) {        
     }
 }

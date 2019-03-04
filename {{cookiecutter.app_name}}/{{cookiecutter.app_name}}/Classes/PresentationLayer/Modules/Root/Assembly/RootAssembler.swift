@@ -6,15 +6,12 @@
 //  Copyright © 2018 {{cookiecutter.company_name}}. All rights reserved.
 //
 
-import UIKit
 import Swinject
+import UIKit
 
 class RootModuleAssembler: Assembly {
-    
     func assemble(container: Container) {
-
         container.register(RootInteractor.self) { ( _, presenter: RootPresenter) in
-
             let interactor = RootInteractor()
             interactor.output = presenter
 
@@ -22,7 +19,6 @@ class RootModuleAssembler: Assembly {
         }
         
         container.register(RootRouter.self) { (_, viewController: RootViewController) in
-
             let router = RootRouter()
             router.view = viewController
             
@@ -30,7 +26,6 @@ class RootModuleAssembler: Assembly {
         }
         
         container.register(RootModuleInput.self) { resolver in
-
             let presenter = RootPresenter()
 
             let viewController = resolver.resolve(RootViewController.self, argument: presenter)!
@@ -43,7 +38,6 @@ class RootModuleAssembler: Assembly {
         }
         
         container.register(RootViewController.self) { (_, presenter: RootPresenter) in
-
             let viewController = R.storyboard.root.rootViewController()!
             viewController.output = presenter
             return viewController
