@@ -1,10 +1,10 @@
 
 included:
-  - ProjectName
+  - {{cookiecutter.app_name}}
 excluded:
   - Pods
-  - ProjectName/Other/R.generated.swift  
-  - ProjectName/Common/ThirdParty
+  - {{cookiecutter.app_name}}/Other/R.generated.swift  
+  - {{cookiecutter.app_name}}/Common/ThirdParty
 
 whitelist_rules:
   - array_init
