@@ -38,7 +38,7 @@ class RootAssembly: Assembly {
             let assembler = resolver.resolve(ApplicationAssembler.self)!
             return ModuleAssembly(parent: assembler.assembler)
             // swiftlint:enable force_unwrapping
-            }
+        }
         .inObjectScope(.container)
         
         container.register([ConfiguratorProtocol].self) {resolver in

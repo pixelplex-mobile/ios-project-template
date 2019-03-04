@@ -84,7 +84,7 @@ extension Presentable where Self: UIViewController {
         transition.duration = 0.1
         transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         transition.type = CATransitionType.fade
-        modal.view.window!.layer.add(transition, forKey: nil)
+        modal.view.window?.layer.add(transition, forKey: nil)
         self.dismiss(animated: false, completion: nil)
     }
 }
