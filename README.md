@@ -28,7 +28,7 @@ Inspired by [Raizlabs/ios-template]
 
 1. [Install cookiecutter][cookiecutter] (`brew install cookiecutter` on
    macOS).
-2. Run `cookiecutter gh:pixelplex-mobile/ios-template`
+2. Run `cookiecutter gh:pixelplex-mobile/ios-project-template`
 
 [cookiecutter]: http://cookiecutter.readthedocs.org/en/latest/installation.html
 
