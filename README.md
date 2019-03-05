@@ -2,18 +2,27 @@
 
 A template for new iOS projects at PixelPlex.
 
+Inspired by [Raizlabs/ios-template]
+
+[Raizlabs/ios-template]: https://github.com/Raizlabs/ios-template
+
 ## What's in the template?
 
- - Up to date with the latest release of Xcode and Swift
- - Uses CocoaPods for dependency management
- - Default dependencies for production
- - Default file organization
- - Configuration for [Swinject]
- - Configuration for [SwiftLint]
+ - Configures the project name, company name, lead name, an initial local repo, gitignore, and synx.
+ - Default [swiftlint][swiftlint] rules to help enforce code style standards across projects.
+ - [Default set of Cocoapods][pods] including:
+   - [Swinject][swinject] - "Dependency injection framework for Swift with iOS."
+   - [Rswift][rswift] - "R.swift is a tool to get strong typed, autocompleted resources like images, fonts and segues in Swift projects."
+   - [Moya][moya] - "Network abstraction layer written in Swift."
+   - [SwiftyJSON][swiftyJSON] - "Way to deal with JSON data in Swift"
 
 
-[Swinject]: https://github.com/Swinject/Swinject
-[SwiftLint]: https://github.com/realm/SwiftLint
+[swinject]: https://github.com/Swinject/Swinject
+[swiftlint]: PRODUCTNAME/app/.swiftlint.yml
+[pods]: PRODUCTNAME/app/Podfile
+[rswift]: https://github.com/mac-cain13/R.swift
+[moya]: https://github.com/Moya/Moya
+[swiftyJSON]: https://github.com/SwiftyJSON/SwiftyJSON
 
 ## Usage
 
