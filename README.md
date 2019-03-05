@@ -18,8 +18,8 @@ Inspired by [Raizlabs/ios-template]
 
 
 [swinject]: https://github.com/Swinject/Swinject
-[swiftlint]: PRODUCTNAME/app/.swiftlint.yml
-[pods]: PRODUCTNAME/app/Podfile
+[swiftlint]: https://github.com/realm/SwiftLint
+[pods]: https://cocoapods.org
 [rswift]: https://github.com/mac-cain13/R.swift
 [moya]: https://github.com/Moya/Moya
 [swiftyJSON]: https://github.com/SwiftyJSON/SwiftyJSON
